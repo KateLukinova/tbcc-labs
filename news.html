@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <title>News</title>
   </head>
 <body>
 <div id="button-top">
@@ -41,7 +41,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">
+                            <a class="nav-link active" href="news.html">
                                 News
                             </a>
                         </li>
@@ -66,104 +66,59 @@
         </nav>
     </header>
 
-    <div class="container-fluid bg-img">
-        <section class="main-page">
-            <div class="text-block">
-                <h1 data-aos="fade-up">
-                    Creating an easy to use,<br> modern and safe platform
-                </h1>
-            </div>
-            <div class="img-block" data-aos="fade-left">
-                <img src="img/main-img.svg" alt="">
-            </div>
-        </section>
-    </div>
-
-    <section class="container-fluid bg-color-gray">
-        <div class="two-block">
-            <div class="column" data-aos="fade-up">
-                <div class="text">
-                    <h2>What we do?</h2>
-                    <p>
-                        TBCC Labs is a leader in providing high-performance blockchain full cycle service and products.                    </p>
-                    <a href="#" class="m-btn">Meet our team</a>
+    <section class="container-fluid">
+        <div class="page-container">
+            <h2 class="mb-4">News</h2>
+            <div class="main-news">
+                <div class="main-news__img">
+                    <div class="news-img">
+                        <img src="img/news-img.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="column" data-aos="fade-left">
-                <div class="img double">
-                    <img src="img/double-phone.svg" alt="">
+                <div class="main-news__info">
+                    <div class="news-caption">
+                        Announcement
+                        <span class="news-date">3 July, 2020</span>
+                    </div>
+                    <div class="post-name">
+                        Collaboration between TBCC Labs and ChangeNow
+                    </div>
+                    <span class="news-desc">
+                        We are happy to introduce you to the new partnership between Evemall and the TBCC platform. Evemall is a large Chinese online store that provides a wide range of products.
+                    </span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="container-fluid">
-        <div class="products">
-            <h2 class="mb-5">Products</h2>
-            <div class="col-12 p-0"  data-aos="fade-up">
-                <div class="two-block block-inner bg-product1">
-                    <div class="column w-52">
-                        <div class="text">
-                            <h2 class="white">TBCC Coin</h2>
-                            <p class="white">
-                                Pay for products in partner stores, trade on DEX, use it collateral on lending platforms, as well as in loyalty programs and voting.                            </p>
-                            <a href="#" class="m-btn white">Get started</a>
-                        </div>
-                    </div>
-                    <div class="column w-40">
-                        <div class="img center">
-                            <img src="img/screen1.svg" alt="">
-                        </div>
-                    </div>
+        <div class="two-block pt-0 align-items-end">
+            <div class="column justify-content-start">
+                <div class="search-container">
+                    <input id="searchBar" class="searchbar" type="text" placeholder="Search...">
+                    <a id="btnSearch" class="btn-search">
+                        <img src="img/search-icon.svg" alt="">
+                    </a>
                 </div>
             </div>
-            <div class="col-12 p-0">
-                <div class="row m-0">
-                    <div class="col-12 col-xl-6 p-0 pr-xl-2" data-aos="fade-up" data-aos-delay="300">
-                        <div class="two-block block-inner bg-product2 row-reverse">
-                            <div class="column w-52">
-                                <div class="text">
-                                    <h2>TBCC VPN</h2>
-                                    <p>
-                                        First decentralised blockchain-based VPN
-                                    </p>
-                                    <a href="#" class="m-btn">Download</a>
-                                </div>
-                            </div>
-                            <div class="column w-40">
-                                <div class="img center">
-                                    <img src="img/screen2.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-6 p-0 pl-xl-2" data-aos="fade-up" data-aos-delay="500">
-                        <div class="two-block block-inner bg-product3">
-                            <div class="column w-52">
-                                <div class="text">
-                                    <h2 class="white">TBCC Wallet</h2>
-                                    <p class="white">
-                                        A modern wallet for everyone
-                                    </p>
-                                    <a href="#" class="m-btn white">Learn more</a>
-                                </div>
-                            </div>
-                            <div class="column w-40">
-                                <div class="img center">
-                                    <img src="img/screen1.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="column filter-block">
+                <h4>Filter by</h4>
+                <div class="select-box">
+                    <select name="type-news" id="type-news">
+                        <option value="" disabled selected>Type</option>
+                        <option value="Announcement">Announcement</option>
+                        <option value="Statement">Statement</option>
+                        <option value="Press release">Press release</option>
+                        <option value=Statement">Statement</option>
+                    </select>
+                    <select name="topic-news" id="topic-news">
+                        <option value="" disabled selected>Topic</option>
+                        <option value="Announcement">Announcement</option>
+                        <option value="Statement">Statement</option>
+                        <option value="Press release">Press release</option>
+                        <option value=Statement">Statement</option>
+                    </select>
                 </div>
             </div>
-
         </div>
-    </section>
-
-    <section class="container-fluid">
         <div class="news-block">
-            <h2 class="mb-5">Latest News</h2>
             <div class="news-box">
                 <a href="#" class="news-item">
                     <div class="news-img">
@@ -214,9 +169,59 @@
                     </span>
                 </a>
             </div>
-            <a href="#" class="m-btn">View more</a>
+            <div class="news-box">
+                <a href="#" class="news-item">
+                    <div class="news-img">
+                        <img src="img/news-img.png" alt="">
+                    </div>
+                    <div class="news-caption">
+                        Announcement
+                        <span class="news-date">3 July, 2020</span>
+                    </div>
+                    <span class="news-desc">
+                        Release of TBCC Coin
+                    </span>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-img">
+                        <img src="img/news-img.png" alt="">
+                    </div>
+                    <div class="news-caption">
+                        Announcement
+                        <span class="news-date">3 July, 2020</span>
+                    </div>
+                    <span class="news-desc">
+                        Release of TBCC Coin
+                    </span>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-img">
+                        <img src="img/news-img.png" alt="">
+                    </div>
+                    <div class="news-caption">
+                        Announcement
+                        <span class="news-date">3 July, 2020</span>
+                    </div>
+                    <span class="news-desc">
+                        Release of TBCC Coin
+                    </span>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-img">
+                        <img src="img/news-img.png" alt="">
+                    </div>
+                    <div class="news-caption">
+                        Announcement
+                        <span class="news-date">3 July, 2020</span>
+                    </div>
+                    <span class="news-desc">
+                        Release of TBCC Coin
+                    </span>
+                </a>
+            </div>
+            <a href="#" class="m-btn">Load more</a>
         </div>
-    </section>
+    </section>   
 
     <footer>
         <div class="footer-content">

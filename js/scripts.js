@@ -25,5 +25,21 @@ $( document ).ready(function() {
         $('#selected-value').text($(this).find('div').first().text());
     });
 
+    $("#button-top").bind('click', function(e){
+        e.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 1000);
+    });
 
+    var screenWidth = $(window).width();
+    if (screenWidth > 1200) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 800) {
+                $('#button-top').css('display', 'flex');
+            }  else {
+                $('#button-top').css('display', 'none');
+            }
+        })
+    }  else {
+        $('#button-top').css('display', 'none');
+    }
 });
