@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Light'),
@@ -146,6 +147,14 @@ h3 {
 h4 {
     font-family: 'Gilroy-Bold', sans-serif;
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+h5 {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 30px;
     line-height: 1.5;
     letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 0.87);
@@ -1439,6 +1448,99 @@ article {
     bottom: 8px;
 }
 
+.partners {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding: 50px 0 100px 0;
+}
+
+.partners-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    a {
+        margin-right: 15px;
+        -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.04);
+        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.04);
+        border-radius: 2px;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+.video-mini {
+    height: 380px;
+}
+
+.values {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.values-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.values-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 22%;
+    margin-bottom: 30px;
+    min-width: 250px;
+    &.values-item-30 {
+        width: 30%;
+    }
+    h5 {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.87);
+        margin: 16px 0;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.img-section {
+    background-image: url("../img/section-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
 @media (max-width: 1200px) {
     h1 {
         font-size: 32px;
@@ -1639,6 +1741,10 @@ article {
 
     .back, .prev, .next {
         font-size: 14px;
+    }
+
+    .img-section {
+        height: 300px;
     }
 }
 
@@ -1850,6 +1956,42 @@ article {
     .team-controls {
         width: 100%;
     }
+
+    .careers-caption {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        h5 {
+            font-size: 24px;
+        }
+        .m-btn {
+            -ms-flex-item-align: start;
+            align-self: flex-start;
+        }
+    }
+
+    .values-box {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        .values-item {
+            margin-right: 20px;
+            h5 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .values {
+        padding: 20px 0;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1908,5 +2050,18 @@ article {
         svg {
             width: 5px;
         }
+    }
+
+    .values-box {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        .values-item {
+            min-width: 100%;
+        }
+    }
+
+    .img-section {
+        height: 220px;
     }
 }
